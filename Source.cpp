@@ -11,21 +11,34 @@
 using namespace std;
 
 //prototypes
-int countCharacter(string str);
+int countVowel(string str);
 
 //global variables
 
 
 int main(void) {
    
-    string input = "hi";
-    cout << countCharacter(input);
+    
+    string input = "aeiouh";
+   
+   
+    cout << countVowel(input);
                     
 
                 return 0;
             }
 
-int countCharacter(string str) {
-   
-    return str.length(); 
+int countVowel(string str) {
+    str.length();
+    int count = 0;
+    for (int i = 0; i < str.length(); i++) {
+        
+        if (str[i]=='a'||str[i] =='e' || str[i] =='i' || str[i]=='o' || str[i]=='u') {
+            count++;
+        }
+        
+    }
+
+    
+    return count; 
 }
