@@ -10,12 +10,22 @@
 #include <ctime>
 using namespace std;
 
+//prototypes
+int countCharacter(string str);
+
+//global variables
+
 
 int main(void) {
    
-           
+    string input = "hi";
+    cout << countCharacter(input);
                     
 
                 return 0;
             }
 
+int countCharacter(string str) {
+   
+    return str.length(); 
+}
